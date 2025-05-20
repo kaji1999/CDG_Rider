@@ -599,7 +599,7 @@ label {
   letter-spacing: 4px;
   font-size: 18px;
   font-weight: 700;
-  color: var(--theme-color);
+  color: white;
 }
 
 .site-title-tagline::before{
@@ -622,7 +622,7 @@ label {
 }
 
 .site-title span{
-  color: var(--theme-color);
+  color: white;
 }
 
 .site-heading p {
@@ -632,7 +632,7 @@ label {
 .heading-divider {
   display: inline-block;
   position: relative;
-  border: 3px solid var(--theme-color);
+  border: 3px solid white;
   width: 90px;
   height: 10px;
   border-radius: 50px;
@@ -646,7 +646,7 @@ label {
   height: 7px;
   width: 15px;
   border-radius: 50px;
-  background: var(--theme-color);
+  background: white;
   -webkit-animation: heading-move 5s infinite linear;
   animation: heading-move 5s infinite linear;
 }
@@ -740,7 +740,7 @@ label {
 }
 
 .theme-btn2:hover{
-  color: var(--color-dark);
+  color:white;
 }
 
 
@@ -947,7 +947,7 @@ only screen
 }
 
 .header-top-social span{
-  color: var(--color-white);
+  color: gold;
 }
 
 .header-top-social a {
@@ -1017,9 +1017,9 @@ only screen
   }
 
   .tripadvisor-badge {
-  background-color: #fbf8f8; /* dark background like your image */
+  background-color: #080808; /* dark background like your image */
   padding: 10px;
-  display: inline-block;
+  display: inline;
   border-radius: 5px;
   
 }
@@ -1040,6 +1040,9 @@ only screen
   color: gold;
   font-size: 16px;
   margin-top: -2px;
+}
+.badge{
+  display: inline;
 }
 /*====================
 12. Navbar css
@@ -2667,7 +2670,7 @@ a.ui-button:active,
 }
 
 .testimonial-area .owl-dots .owl-dot span {
-  background: var(--theme-color);
+  background: white;
   margin: 5px;
   border-radius: 50px;
   width: 8px;
@@ -2677,7 +2680,7 @@ a.ui-button:active,
 }
 
 .testimonial-area .owl-dots .owl-dot.active span {
-  background-color: var(--theme-color);
+  background-color: white;
   width: 20px;
 }
 
