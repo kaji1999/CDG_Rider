@@ -599,7 +599,7 @@ label {
   letter-spacing: 4px;
   font-size: 18px;
   font-weight: 700;
-  color: white;
+  color:var(--theme-color);
 }
 
 .site-title-tagline::before{
@@ -3941,6 +3941,9 @@ a.ui-button:active,
   border-radius: 20px;
   margin-bottom: 25px;
   box-shadow: var(--box-shadow);
+  border: var(--theme-color) solid;
+  height: 650px;
+
 }
 
 .taxi-img{
@@ -3951,7 +3954,13 @@ a.ui-button:active,
 }
 
 .taxi-head {
+  border: var(--theme-color) solid;
+  width: 150px;
+  height: 150px;
+  justify-content: center;
   text-align: center;
+  margin: 80px 80px;
+  border-radius: 50%;
 }
 
 .taxi-head h4{
@@ -3959,18 +3968,23 @@ a.ui-button:active,
   margin-bottom: 5px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 15px;
 }
 
 .taxi-head span{
   font-weight: 500;
   color: var(--theme-color);
+  font-size: 15px;
 }
 
 .taxi-feature{
   padding-top: 20px;
   margin: 20px 0 30px 0;
-  border-top: 1px solid var(--border-info-color);
+  border-top: 1px solid var(--color-white);
   position: relative;
+  margin-top: -150px;
+  background-color: var(--theme-color);
+  border-radius: 15px;
 }
 
 .taxi-feature::before{
@@ -3978,15 +3992,19 @@ a.ui-button:active,
   position: absolute;
   width: 50px;
   height: 6px;
-  background: var(--theme-color);
+
   border-radius: 50px;
   left: 50%;
   top: -4px;
   transform: translateX(-50%);
 }
-
+.taxi-feature ul{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .taxi-feature ul li{
   padding: 4px 0;
+  color: white;
 }
 
 .taxi-feature ul li span{
@@ -3997,7 +4015,7 @@ a.ui-button:active,
   width: 30px;
   height: 30px;
   line-height: 28px;
-  color: var(--color-white);
+  color: white;
   border-radius: 50px;
   margin-right: 10px;
   text-align: center;
@@ -4006,6 +4024,12 @@ a.ui-button:active,
 
 .taxi-content .theme-btn{
   width: 100%;
+}
+.taxi-content{
+  margin-top: -70px;
+}
+.taxi-item:hover{
+  transform: scale(1.1);
 }
 
 /* taxi filter */
@@ -4031,7 +4055,10 @@ a.ui-button:active,
 .filter-btns li.active{
   background: var(--theme-color);
 }
-
+.border-primary{
+  border: var(--theme-color) solid;
+  background-color: var(--theme-bg-light);
+}
 
 /*===================
 41. Taxi single css 
