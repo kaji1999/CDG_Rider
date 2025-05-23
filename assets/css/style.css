@@ -1798,8 +1798,12 @@ only screen
   .hero-single .hero-content .hero-btn {
     gap: 1rem;
   }
+  
 
 }
+@media all and (max-width: 768px){
+}
+
 
 
 
