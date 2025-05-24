@@ -1,10 +1,3 @@
-/*=====================================================
-Template Name   : Taxica
-Description     : Online Taxi Service HTML5 Template
-Author          : LunarTemp
-Version         : 1.0
-=======================================================*/
-
 
 (function ($) {
     
