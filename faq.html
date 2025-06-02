@@ -31,6 +31,15 @@
 <body>
 
     <!-- preloader -->
+     <!-- Loader Popup -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader-box">
+            <img src="assets/images/group-van-l0g0.jpeg" alt="Logo" class="loader-logo"> <!-- Replace with your logo -->
+            <p class="loader-text">Please wait 5 seconds to be redirected to our booking system</p>
+            <p class="loader"></p>
+            <p class="countdown-text">Redirecting in <span id="countdown">5</span> seconds...</p>
+        </div>
+    </div>
     <div class="preloader">
         <div class="loader-ripple">
             <div></div>
@@ -108,10 +117,10 @@
                         </ul>
                         <div class="nav-right">
                             <div class="nav-right-btn mt-2">
-                                <a href="Redirecting.html" class="theme-btn book"><span class="fas fa-taxi"></span>BOOK NOW</a>
+                                <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn book"><span class="fas fa-taxi"></span>BOOK NOW</a>
                             </div>
                             <div class="nav-right-btn mt-2" >
-                                <a href="Redirecting.html" class="theme-btn  SIGNUP"><span class="fas fa-user-plus"></span>SIGNUP</a>
+                                <a onclick="showLoader('https://groupebluevanparis.com/sign-in/en')" class="theme-btn  SIGNUP"><span class="fas fa-user-plus"></span>SIGNUP</a>
                             </div>
                             <div class="sidebar-btn">
                                 <button type="button" class="nav-right-link"><i class="far fa-bars-filter"></i></button>
@@ -169,6 +178,10 @@
     <main class="main">
 
         <!-- breadcrumb -->
+         <div class="site" style="width: 100%; height: 10px; background-color: rgb(9, 9, 118);">
+            <div class="container"  >
+            </div>
+        </div>
         <!-- breadcrumb end -->
 
 
@@ -422,7 +435,7 @@
                                 <li><a href="index.html"><i class="fas fa-caret-right"></i> Home</a></li>
                                 <li><a href="about.html"><i class="fas fa-caret-right"></i> About</a></li>
                                 <li><a href="service.html"><i class="fas fa-caret-right"></i> Service</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Rates</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/rates/en')"><i class="fas fa-caret-right"></i> Rates</a></li>
                                 <li><a href="faq.html"><i class="fas fa-caret-right"></i> FAQ</a></li>
                                 <li><a href="contact.html"><i class="fas fa-caret-right"></i> Contact</a></li>
                             </ul>
@@ -432,12 +445,12 @@
                         <div class="footer-widget-box list text-center ">
                             <h4 class="footer-widget-title">Routes</h4>
                             <ul class="footer-list">
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Beauvais Airport</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Charles De Gaulle Airport</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Orly Airport</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Book A Ride</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Disneyland</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Paris City</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/en')"></i> Beauvais Airport</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/en')"></i> Charles De Gaulle Airport</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/en')"></i> Orly Airport</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/en')"></i> Book A Ride</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/en')"></i> Disneyland</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/en')"><i class="fas fa-caret-right"></i> Paris City</a></li>
                             </ul>
                         </div>
                     </div>
