@@ -25,13 +25,23 @@
     <link rel="stylesheet" href="assets/css/jquery.timepicker.min.css">
     <link rel="stylesheet" href="assets/css/nice-select.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 
     
 
 </head>
 
+
 <body class="home-2">
+    <!-- Loader Popup -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader-box">
+            <img src="assets/images/group-van-l0g0.jpeg" alt="Logo" class="loader-logo"> <!-- Replace with your logo -->
+            <p class="loader-text">Please wait 5 seconds to be redirected to our booking system</p>
+            <p class="loader"></p>
+            <p class="countdown-text">Redirecting in <span id="countdown">5</span> seconds...</p>
+        </div>
+    </div>
 
     <!-- preloader -->
     <div class="preloader">
@@ -115,11 +125,10 @@
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         </ul>
                         <div class="nav-right">
+                            
                             <div class="nav-right-btn mt-2">
-                                <a href="Redirecting.html" class="theme-btn book"><span class="fas fa-taxi"></span>BOOK NOW</a>
-                            </div>
-                            <div class="nav-right-btn mt-2" >
-                                <a href="Redirecting.html" class="theme-btn  SIGNUP"><span class="fas fa-user-plus"></span>SIGNUP</a>
+                             <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn"><span class="fas fa-taxi"></span>Book Now</a>
+                             <a onclick="showLoader('https://groupebluevanparis.com/sign-in/en')" class="theme-btn theme-btn2"><span class="fa-solid fa-user-plus"></span>SignUp</a>
                             </div>
                             <div class="sidebar-btn">
                                 <button type="button" class="nav-right-link"><i class="far fa-bars-filter"></i></button>
@@ -193,9 +202,8 @@
                                     </p>
                                     <div class="hero-btn justify-content-center" data-animation="fadeInUp"
                                         data-delay="1s">
-                                        <a href="Redirecting.html" class="theme-btn"><i class="fas fa-taxi" style="margin-right: 5px;"></i>BOOK NOW</a>
-                                        <a href="Redirecting.html" class="theme-btn theme-btn2"><i
-                                            class="fas fa-user-plus" style="margin-right: 5px;"></i>SIGNUP</a>
+                                        <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn"><span class="fas fa-taxi"></span>Book Now</a>
+                                        <a onclick="showLoader('https://groupebluevanparis.com/sign-in/en')" class="theme-btn theme-btn2"><span class="fa-solid fa-user-plus"></span>SignUp</a>
                                     </div>
                                 </div>
                             </div>
@@ -218,9 +226,8 @@
                                     </p>
                                     <div class="hero-btn justify-content-center" data-animation="fadeInUp"
                                         data-delay="1s">
-                                        <a href="#" class="theme-btn"><i class="fas fa-taxi" style="margin-right: 5px;"></i>BOOK NOW</a>
-                                        <a href="Redirecting.html" class="theme-btn theme-btn2"><i
-                                            class="fas fa-user-plus" style="margin-right: 5px;">SIGNUP</i></a>
+                                        <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn"><span class="fas fa-taxi"></span>Book Now</a>
+                                        <a onclick="showLoader('https://groupebluevanparis.com/sign-in/en')" class="theme-btn theme-btn2"><span class="fa-solid fa-user-plus"></span>SignUp</a>
                                     </div>
                                 </div>
                             </div>
@@ -243,8 +250,8 @@
                                     </p>
                                     <div class="hero-btn justify-content-center" data-animation="fadeInUp"
                                         data-delay="1s">
-                                        <a href="Redirecting.html" class="theme-btn"><i class="fas fa-taxi" style="margin-right: 5px;"></i>BOOK NOW</a>
-                                        <a href="Redirecting.html" class="theme-btn theme-btn2"><i class="fas fa-user-plus" style="margin-right: 5px;"></i>SIGNUP</a>
+                                        <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn"><span class="fas fa-taxi"></span>Book Now</a>
+                                        <a onclick="showLoader('https://groupebluevanparis.com/sign-in/en')" class="theme-btn theme-btn2"><span class="fa-solid fa-user-plus"></span>SignUp</a>
                                     </div>
                                 </div>
                             </div>
@@ -256,7 +263,7 @@
         <!-- hero slider end -->
 
         <!-- about area -->
-        <div class="about-area py-120" style="margin-top: -120px;">
+        <div class="about-area py-120">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -298,7 +305,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <a href="Redirecting.html" class="theme-btn mt-4">Book Now<i
+                                <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn mt-4">Book Now<i
                                     class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -396,13 +403,13 @@
                             </div>
                             <div class="service-content">
                                 <h3 class="service-title">
-                                    <a href="Redirecting.html">Online Booking</a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')">Online Booking</a>
                                 </h3>
                                 <p class="service-text text-center">
                                     With CDG Rider’s Online Booking, getting a ride is just a few clicks away. Whether you're at home, at work, or on the go, our user-friendly platform makes booking a taxi quick and hassle-free.
                                 </p>
                                 <div class="service-arrow">
-                                    <a href="Redirecting.html" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')">Book Now<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -417,14 +424,14 @@
                             </div>
                             <div class="service-content">
                                 <h3 class="service-title">
-                                    <a href="Redirecting.html">City Transport</a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')">City Transport</a>
                                 </h3>
                                 <p class="service-text text-center">
                                     At CDG Rider, we provide efficient and reliable City Transport services to get you wherever you need to go, within the city and beyond.
                                     Whether it’s a quick trip to the office, a ride to your favorite restaurant, or a weekend adventure, we’ve got you covered.
                                 </p>
                                 <div class="service-arrow">
-                                    <a href="Redirecting.html" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -439,13 +446,13 @@
                             </div>
                             <div class="service-content">
                                 <h3 class="service-title">
-                                    <a href="Redirecting.html">Airport Transport</a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')">Airport Transport</a>
                                 </h3>
                                 <p class="service-text text-center">
                                     With CDG Rider, your journey to and from the airport is always smooth, reliable, and comfortable. Whether you’re catching an early morning flight or arriving after a long trip, our Airport Transport service ensures you get to your destination on time and without hassle.
                                 </p>
                                 <div class="service-arrow">
-                                    <a href="Redirecting.html" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -460,13 +467,13 @@
                             </div>
                             <div class="service-content">
                                 <h3 class="service-title">
-                                    <a href="Redirecting.html">Bussiness Transport</a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')">Bussiness Transport</a>
                                 </h3>
                                 <p class="service-text text-center">
                                     At CDG Rider, we understand that time is money, especially in business. Our Business Transport service is designed to meet the needs of professionals who require punctual, comfortable, and stress-free travel for meetings, events, and daily commutes.
                                 </p>
                                 <div class="service-arrow">
-                                    <a href="Redirecting.html" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -481,13 +488,13 @@
                             </div>
                             <div class="service-content">
                                 <h3 class="service-title">
-                                    <a href="Redirecting.html">Regular Transport</a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')">Regular Transport</a>
                                 </h3>
                                 <p class="service-text text-center">
                                   CDG Rider’s Regular Transport service is your go-to solution for everyday travel. Whether it’s commuting to work, running errands, or heading out for a casual outing, we offer reliable and affordable rides for all your daily transportation needs.
                                 </p>
                                 <div class="service-arrow">
-                                    <a href="Redirecting.html" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -502,13 +509,13 @@
                             </div>
                             <div class="service-content">
                                 <h3 class="service-title">
-                                    <a href="Redirecting.html">Tour Transport</a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')">Tour Transport</a>
                                 </h3>
                                 <p class="service-text text-center">
                                     At CDG Rider, we offer premium Tour Transport services to help you explore new destinations with comfort and convenience. Whether you’re visiting local landmarks, going on a city tour, or embarking on a longer excursion, our tour transport service ensures a seamless travel experience.
                                 </p>
                                 <div class="service-arrow">
-                                    <a href="Redirecting.html" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
+                                    <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn">Book Now<i class="fas fa-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -550,7 +557,7 @@
                                         <li><i class="far fa-person-seat"></i> Baby seat <span>1</span></li>
                                     </ul>
                                 </div>
-                                <a href="Redirecting.html" class="theme-btn">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
+                                <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -572,7 +579,7 @@
                                         <li><i class="far fa-person-seat"></i> Baby seat <span>2</span></li>
                                     </ul>
                                 </div>
-                                <a href="Redirecting.html" class="theme-btn">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
+                                <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')" class="theme-btn">Book Taxi Now<i class="fas fa-arrow-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -594,7 +601,7 @@
                                         <li><i class="far fa-person-seat"></i> Baby seat <span>2</span></li>
                                     </ul>
                                 </div>
-                                <a href="Redirecting.html"class="theme-btn">Book Taxi Now <i class="fas fa-arrow-right"></i></a>
+                                <a onclick="showLoader('https://groupebluevanparis.com/booknow/en')"class="theme-btn">Book Taxi Now <i class="fas fa-arrow-right"></i></a>
 
                             </div>
                         </div>
@@ -980,7 +987,7 @@
                                 <li><a href="index.html"><i class="fas fa-caret-right"></i> Home</a></li>
                                 <li><a href="about.html"><i class="fas fa-caret-right"></i> About</a></li>
                                 <li><a href="service.html"><i class="fas fa-caret-right"></i> Service</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Rates</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/booknow/en')"><i class="fas fa-caret-right"></i> Rates</a></li>
                                 <li><a href="faq.html"><i class="fas fa-caret-right"></i> FAQ</a></li>
                                 <li><a href="contact.html"><i class="fas fa-caret-right"></i> Contact</a></li>
                             </ul>
@@ -990,12 +997,12 @@
                         <div class="footer-widget-box list text-center ">
                             <h4 class="footer-widget-title">Routes</h4>
                             <ul class="footer-list">
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Beauvais Airport</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Charles De Gaulle Airport</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Orly Airport</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Book A Ride</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Disneyland</a></li>
-                                <li><a href="Redirecting.html"><i class="fas fa-caret-right"></i> Paris City</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/booknow/en')"><i class="fas fa-caret-right"></i> Beauvais Airport</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/booknow/en')"><i class="fas fa-caret-right"></i> Charles De Gaulle Airport</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/booknow/en')"><i class="fas fa-caret-right"></i> Orly Airport</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/booknow/en')"><i class="fas fa-caret-right"></i> Book A Ride</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/booknow/en')"><i class="fas fa-caret-right"></i> Disneyland</a></li>
+                                <li><a onclick="showLoader('https://groupebluevanparis.com/booknow/en')"><i class="fas fa-caret-right"></i> Paris City</a></li>
                             </ul>
                         </div>
                     </div>
@@ -1038,13 +1045,9 @@
   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp" />
 </a>
 
-
-
-
     <!-- scroll-top -->
     <a href="#" id="scroll-top"><i class="far fa-arrow-up"></i></a>
     <!-- scroll-top end -->
-
 
     <!-- js -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>

@@ -267,7 +267,18 @@
 
 })(jQuery);
 
-
+function showLoader(url) {
+    let countdown = 5; // Start countdown from 10
+    document.getElementById("loader").style.display = "flex"; // Show loader
+    let timer = setInterval(function() {
+        document.getElementById("countdown").textContent = countdown; // Update countdown
+        countdown--;
+        if (countdown < 0) {
+            clearInterval(timer); // Stop countdown
+            window.location.href = url; // Redirect to the URL
+        }
+    }, 1000); // Update every second
+}
 
 
 
