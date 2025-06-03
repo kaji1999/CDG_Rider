@@ -5759,7 +5759,7 @@ body.rtl-mode .price-wrapper {
 }
 @media (max-width: 478px){
   .about-area{
-    margin-top: -120px;
+    margin-top: 20px;
   }
 }
 /* General Styles */
