@@ -1822,6 +1822,9 @@ only screen
   .site-heading{
     margin-top: -40px;
   }
+  .site-title-tagline{
+    font-size: 10px;
+  }
 
 }
 @media all and (max-width: 768px){
@@ -2158,7 +2161,7 @@ a.ui-button:active,
   position: relative;
   display: block;
   padding-left: 30px;
-  text-align: center;
+  text-align: start;
 }
 
 .about-list-wrapper {
@@ -2494,6 +2497,9 @@ a.ui-button:active,
 @media all and (max-width: 767px) {
   .video-wrapper {
     height: 250px;
+  }
+  .about-right{
+    text-align: center;
   }
 }
 
