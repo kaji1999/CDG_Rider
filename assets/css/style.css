@@ -1703,14 +1703,20 @@ only screen
   position: relative;
   text-transform: uppercase;
 }
+.hero-single .hero-content .hero-p{
+  text-transform: lowercase;
+  font-size: 20px;
+ }
 
 .hero-single .hero-content p {
   color: var(--color-white);
   line-height: 30px;
   font-weight: 400;
   margin-bottom: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
 }
-
+ 
 .hero-single .hero-content .hero-btn {
   gap: 1rem;
   display: flex;
@@ -1792,13 +1798,30 @@ only screen
 @media all and (max-width: 767px) {
 
   .hero-single .hero-content .hero-sub-title {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .hero-single .hero-content  p{
+    font-size: 13px;
   }
 
   .hero-single .hero-content .hero-btn {
     gap: 1rem;
   }
-  
+  .hero-single .hero-content .hero-title{
+    font-size: 25px;
+  }
+  .hero-single .hero-content .hero-p{
+    font-size: 10px;
+    text-transform: lowercase;
+    line-height: 15px;
+  }
+  .site-title{
+    font-size: 20px;
+  }
+  .site-heading{
+    margin-top: -40px;
+  }
 
 }
 @media all and (max-width: 768px){
@@ -5848,4 +5871,5 @@ body {
       width: 100%;
       height: 100%;
     }
+    .
 }
