@@ -1624,13 +1624,18 @@ only screen
   text-align: center;
   border-radius: 50px;
   margin-right: 8px;
-  background: var(--color-dark);
-  color: var(--color-white);
+  background:  var(--color-white);
+  color: var(--color-dark);
   box-shadow: var(--box-shadow);
+  border: var(--color-dark) soild;
+}
+.sidebar-social a img{
+  width: 30px;
+  height: 30px;
 }
 
 .sidebar-social a:hover{
-  background: var(--theme-color);
+  border: var(--theme-color) 2px;
 }
 
 
@@ -2608,7 +2613,7 @@ a.ui-button:active,
 
 .testimonial-area {
   position: relative;
-  background-image: url(../images/footer-bc.jpg);
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2619,7 +2624,7 @@ a.ui-button:active,
 .testimonial-area::before{
   content: "";
   position: absolute;
-  background: rgba(0, 0, 0, .85);
+  background: rgba(255, 253, 253, 0.85);
   width: 100%;
   height: 100%;
   left: 0;
@@ -3513,8 +3518,17 @@ a.ui-button:active,
 }
 
 .contact-map iframe {
-  width: 100%;
+  width: 80%;
   height: 450px;
+  margin-bottom: 20px;
+}
+
+@media(max-width:767px){
+  .contact-map iframe {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: -1px;
+  }
 }
 
 .contact-content {
@@ -3534,6 +3548,7 @@ a.ui-button:active,
   background:var(--color-white);
   box-shadow: var(--box-shadow);
   transition: var(--transition);
+  height: 260px;
 }
 
 .contact-info::before{
@@ -5877,5 +5892,24 @@ body {
       width: 100%;
       height: 100%;
     }
-    .
+    .about-right-1{
+      display: none;
+    }
+}
+.about-down{
+  background-color: #e4e6e9;
+
+}
+.about-right-1{
+  background-color:white ;
+  border-radius: 30px;
+  align-items: end;
+  justify-content: end;
+  text-align: end;
+}
+.about-right-2{
+  margin-top: 50px;
+}
+.about-center{
+  margin-top: 20px;
 }
